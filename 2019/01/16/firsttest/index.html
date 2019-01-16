@@ -18,11 +18,16 @@
     <meta name="description" content="">
     <meta name="author" content="Fiberless">
     <meta name="keywords" content="">
-    <title>Archive ~ Fiberless</title>
+    <title>firsttest ~ Fiberless</title>
     <link rel="stylesheet" href="/css/Material_Icons.css">
     <!-- <link rel="stylesheet" href="/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    
+        <link rel="stylesheet" href="/css/post.css">
+        
+            <link rel="stylesheet" href="/css/Prettify/tomorrow-night-eighties.min.css">
+        
     
 </head>
 
@@ -79,7 +84,8 @@
   <div class="page-header header-filter" data-parallax="true" style="background-image: url('../img/post-head.jpg')">
     
       <div class="container">
-        <h1 class="title text-center">Archive</h1>
+        <h1 class="title text-center">firsttest</h1>
+        <p class="text-center"><b>星期三, 一月 16日 2019, 8:09 晚上</b></p>
       </div>
     
   </div>
@@ -88,65 +94,61 @@
   <div class="main main-raised">
     <div class="container">
       <div class="section">
-        <div class="row">
-    <div class="col-md-10 offset-md-1">
-        <div class="card">
-            <div class="card-body">
-                <ul class="nav nav-pills nav-pills-rose">
-                    <li class="nav-item"><a class="nav-link active" href="#all" data-toggle="tab">All </a></li>
+        
+
+
+<div class="row">
+    <div class="col-md-7 offset-md-2">
+        <div class="post_content tocbot-content">
+            <p>#一级标题<br>代码引用<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"hello world"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>访问<a href="https://www.google.com" target="_blank" rel="noopener">Google</a></p>
+
+        </div>
+        <br><br>
+        <div>
+            <p>
+                     
+                    <span class="badge badge-default">#&nbsp;草稿</span>
+                    &nbsp;
                     
-                        <li class="nav-item"><a class="nav-link" href="#草稿" data-toggle="tab">草稿</a></li>
-                    
-                </ul>
-                <div class="tab-content tab-space">
-                    <div class="tab-pane active" id="all">
-                        <p class="h3">Total: 3</p>
-                        <hr>
-                        
-                            <div class="row">
-                                <div class="col-md-11">
-                                    <p class="h6">2019-01-16&nbsp;--&nbsp;<a href="/2019/01/16/firsttest/" class="h3 title">firsttest</a></p>
-                                </div>
-                            </div>
-                        
-                            <div class="row">
-                                <div class="col-md-11">
-                                    <p class="h6">2019-01-16&nbsp;--&nbsp;<a href="/2019/01/16/test-my-site/" class="h3 title">test_my_site</a></p>
-                                </div>
-                            </div>
-                        
-                            <div class="row">
-                                <div class="col-md-11">
-                                    <p class="h6">2019-01-16&nbsp;--&nbsp;<a href="/2019/01/16/hello-world/" class="h3 title">Hello World</a></p>
-                                </div>
-                            </div>
-                         
-                    </div>
-                    
-                        <div class="tab-pane" id="草稿">
-                                                            
-                                
-                                
-                                    <div class="row">
-                                        <div class="col-md-11">
-                                            <p class="h6">2019-01-16&nbsp;--&nbsp;<a href="/2019/01/16/firsttest/" class="h3 title">firsttest</a></p>
-                                        </div>
-                                    </div>
-                                
-                                
-                                                            
-                                
-                                                            
-                                
-                             
-                        </div>
-                    
-                </div>
-            </div>  
+            </p>
         </div>
     </div>
+    <!-- TOC -->
+    
+        <div class="col-md-3">
+            
+        </div>
+    
 </div>
 
+<!-- Comments -->
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+    
+        
+            <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script>               
+        var disqus_shortname = '';
+        var disqus_config = function () {
+            this.page.url = 'http://yoursite.com/2019/01/16/firsttest/'; 
+            this.page.identifier = '/2019/01/16/firsttest/';
+        };
+        (function() { 
+            var d = document, s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.src = '//'+disqus_shortname+'.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                                
+</div>
+        
+    
+    </div>
+</div>
       </div>
     </div>
   </div>
@@ -168,6 +170,8 @@
 </footer>
       <!--   Core JS Files   -->
       <script src="/js/core/jquery.min.js"></script>
+      
+        <script src="/js/main.js"></script>
        
       <script src="/js/core/popper.min.js"></script>
       <script src="/js/core/bootstrap-material-design.min.js"></script>
@@ -179,6 +183,17 @@
       <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
       <script src="/js/material-kit.min.js?v=2.0.5"></script>
       
+      
+        <script src="/js/plugins/prettify.js"></script>
+        <script>
+            $(window).on('load',function(){
+                $('pre').addClass('prettyprint linenums');
+                prettyPrint();
+            })
+        </script>
+        
+          
+        
       
 </body>
 </html>
